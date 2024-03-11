@@ -52,11 +52,6 @@ nav ul li a {
   font-weight: 800;
   text-transform: uppercase;
 }
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all 0.5s;
-}
 
 nav ul li a:hover {
   color: #404040;
