@@ -185,12 +185,6 @@ class Specdropdown {
     const list = document.getElementById(this.listId);
     const self = this;
 
-    // Add a reset method to the Specdropdown class
-    this.reset = function () {
-      input.value = ""; // Reset the input field
-      self.create(); // Recreate the dropdown options
-    };
-
     container.addEventListener("click", (e) => {
       console.log("Container clicked");
       if (e.target.id === this.inputId) {
@@ -405,7 +399,3 @@ const SpecChoice3 = new Specdropdown(
 );
 SpecChoice3.create();
 SpecChoice3.addListeners(Specdropdown);
-
-document.addEventListener("classChanged1", function (event) {
-  SpecChoice1.reset(); // Reset SpecChoice1 when ClassChoice1 changes
-});

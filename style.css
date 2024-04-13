@@ -348,6 +348,7 @@ i {
   display: block;
 
   text-align: left;
+  height: 100%;
 
   padding: 0.8em 1em 0.8em 1em;
 
@@ -408,6 +409,12 @@ i {
 .list-item-warrior_ul:hover {
   background: #c69b6d;
   color: #fff;
+}
+
+.PlayerName {
+  display: flex;
+  justify-content: center;
+  /* background: #000; */
 }
 
 .FirstClass {
