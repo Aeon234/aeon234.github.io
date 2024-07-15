@@ -11,14 +11,12 @@ export function NavBar() {
   let CurrentPage_LogoRedirect;
   if (CurrentPage.pathname == "/NoChill_Roster") {
     AssignedLogo = NoChill_Logo;
-    CurrentPage_Title = "No Chill Roster";
+    CurrentPage_Title = "BEST RAPPER ALIVE - Mal'Ganis";
     CurrentPage_LogoRedirect = "/NoChill_Roster";
-    console.log("no chill logo assinged");
   } else {
     AssignedLogo = Aeon_Logo;
     CurrentPage_Title = "";
     CurrentPage_LogoRedirect = "/";
-    console.log("aeon logo assigned");
   }
   return (
     <div className="NavBar">

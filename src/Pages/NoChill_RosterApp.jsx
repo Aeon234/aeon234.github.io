@@ -9,7 +9,7 @@ import { Popup, SubmittedPopup } from "../Components/Popup";
 import { BlizzButton } from "../Components/BlizzButton";
 
 export function NoChill_RosterApp() {
-  document.title = "No Chill - Mal'Ganis";
+  document.title = "BEST RAPPER ALIVE - Mal'Ganis";
 
   const [isPopupVisible, setIsPopUpVisible] = useState(false);
   const [isSubmittedPopupVisible, setIsSubmittedPopUpVisible] = useState(false);
