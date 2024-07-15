@@ -1,0 +1,76 @@
+.Popup {
+  position: absolute;
+  z-index: 1;
+  /* left: 31%; */
+  width: 930px;
+  height: 532px;
+  margin: auto;
+  --r: 1064/1292;
+  aspect-ratio: var(--r);
+  background-image: url("../assets/Background/Questionnaire_BorderLong3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  justify-content: left;
+  max-height: 972px;
+}
+.SubmittedPopup {
+  position: absolute;
+  z-index: 2;
+  /* left: 31%; */
+  margin: auto;
+  --r: 1064/1292;
+  aspect-ratio: var(--r);
+  background-image: url("../assets/Background/Questionnaire_BorderLong3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  justify-content: left;
+  max-height: 972px;
+}
+
+.Popup_Text {
+  height: 100%;
+  text-align: center;
+  padding: 50% 0;
+  color: #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 199, 133, 0.9) 19.57%,
+      rgba(250, 199, 47, 0.9) 44.19%,
+      rgba(255, 199, 133, 0.9) 73.91%
+    ),
+    #ffffff;
+  background-clip: border-box, border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: normal;
+  font: var(--font-accent-alt-900);
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 850px) {
+  .Popup,
+  .SubmittedPopup {
+    /* --r: 1860/1064; */
+    --r: 1064/1860;
+    aspect-ratio: var(--r);
+    background-image: url("../assets/Background/Questionnaire_BorderLong3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1064px;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+    max-height: 1860px;
+    min-width: 648px;
+    min-height: 1133px;
+  }
+}

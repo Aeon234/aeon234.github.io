@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+.RosterQuestionnaire_Content {
+  font-family: "Inter", sans-serif;
+}
+
+h2,
+h3,
+b {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.Popups {
+  position: absolute;
+  z-index: 2;
+}
+
+.Questionnaire {
+  /* --r: 1860/1064; */
+  --r: 1064/1292;
+  aspect-ratio: var(--r);
+  background-image: url("../assets/Background/Questionnaire_BorderLong3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  justify-content: left;
+  display: flex;
+  max-height: 972px;
+}
+.RosterClassQuestionnaire {
+  display: block;
+  justify-content: center;
+  padding: 48px;
+  width: 100%;
+  height: 100%;
+  max-height: 876px;
+}
+
+.QuestionnaireForm {
+  max-height: 876px;
+  height: 100%;
+}
+
+.QuestionnaireTitle {
+  font: "Inter", sans-serif;
+  text-align: center;
+  margin-top: -10px;
+
+  color: #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 199, 133, 0.9) 19.57%,
+      rgba(250, 199, 47, 0.9) 44.19%,
+      rgba(255, 199, 133, 0.9) 73.91%
+    ),
+    #ffffff;
+  background-clip: border-box, border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.GenInfo {
+  margin-top: -30px;
+  display: flex;
+  gap: 25px;
+}
+
+.GenInfo_Question {
+  margin-top: -15px;
+  justify-content: center;
+}
+
+.QuestionLabel {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.Name {
+  width: 100%;
+}
+
+.TextInput {
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  outline: 0;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.PlayerNameInput {
+  max-width: 200px;
+  height: 38px;
+}
+
+.ClassInfo {
+  display: block;
+  gap: 20px;
+}
+
+.ClassQuestions {
+  display: flex;
+  gap: 20px;
+}
+
+.ClassDropdown-input {
+  width: 200px;
+  background-color: #2b2a33;
+}
+.SpecDropdown-input {
+  max-width: 460px;
+  min-width: 236px;
+  background-color: #2b2a33;
+}
+
+.Comments {
+  --r: 2500/1064;
+  aspect-ratio: var(--r);
+
+  max-height: 300px;
+}
+
+.CommentsInput {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  outline: 0;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+  font: "Inter", sans-serif;
+  color: fff;
+}
+
+.SubmitForm {
+  bottom: 40px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+.SubmitButton {
+  font-family: semplicitapro, sans-serif;
+  background: none;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-image: url("../assets/Background/Button/button_background.png");
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+
+  border-image: url("../assets/Background/Button/button_primary.png") 30 fill /
+    30px / 1px;
+  color: #e2d29f;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px;
+  min-width: 282px;
+  min-height: 60px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.SubmitButton:hover {
+  border-image: url("../assets/Background/Button/button_hover.png") 30 fill /
+    30px / 1px;
+  color: #fff;
+}
+
+.SubmitButton:disabled {
+  border-image: url("../assets/Background/Button/button_disabled.png") 30 fill /
+    30px / 1px;
+  background-image: url("../assets/Background/Button/button_background_disabled.png");
+  color: #fffc;
+}
+.SubmitButton:disabled:hover {
+  border-image: url("../assets/Background/Button/button_disabled_hover.png") 30
+    fill / 30px / 1px;
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .ClassQuestions {
+    display: block;
+  }
+  .Questionnaire,
+  .Submitted_Container,
+  .Submitting_Container {
+    /* --r: 1860/1064; */
+    --r: 1064/1860;
+    aspect-ratio: var(--r);
+    background-image: url("../assets/Background/Questionnaire_BorderLong2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1064px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    max-height: 1860px;
+    min-width: 648px;
+    min-height: 1133px;
+  }
+}
+
+/*=== Trigger  ===*/
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animate2x {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.delay {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.nodelay {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+/*=== FADE IN DOWN ===*/
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -75%, 0);
+    transform: translate3d(0, -75%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -75%, 0);
+    transform: translate3d(0, -75%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

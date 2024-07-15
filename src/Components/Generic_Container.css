@@ -1,0 +1,36 @@
+.Generic_Container {
+  position: absolute;
+  z-index: 1;
+  /* left: 31%; */
+  width: 930px;
+  height: 532px;
+  margin: auto;
+  background: #363c52;
+  border-image-source: url("../Background/Questionnaire_Border.png");
+  border-image-slice: 30 fill;
+  border-image-width: 15px;
+  border-image-outset: 10px;
+  justify-content: center;
+}
+
+.Generic_Container {
+  text-align: center;
+  padding: 25% 0;
+  color: #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 199, 133, 0.9) 19.57%,
+      rgba(250, 199, 47, 0.9) 44.19%,
+      rgba(255, 199, 133, 0.9) 73.91%
+    ),
+    #ffffff;
+  background-clip: border-box, border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: normal;
+  font: var(--font-accent-alt-900);
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+}

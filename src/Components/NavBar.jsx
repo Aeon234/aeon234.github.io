@@ -1,0 +1,79 @@
+import "./NavBar.css";
+import Aeon_Logo from "../assets/Logo.ico";
+import NoChill_Logo from "../assets/NoChill.ico";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
+export function NavBar() {
+  const CurrentPage = useLocation();
+  let AssignedLogo;
+  let CurrentPage_Title;
+  let CurrentPage_LogoRedirect;
+  if (CurrentPage.pathname == "/NoChill_Roster") {
+    AssignedLogo = NoChill_Logo;
+    CurrentPage_Title = "No Chill Roster";
+    CurrentPage_LogoRedirect = "/NoChill_Roster";
+    console.log("no chill logo assinged");
+  } else {
+    AssignedLogo = Aeon_Logo;
+    CurrentPage_Title = "";
+    CurrentPage_LogoRedirect = "/";
+    console.log("aeon logo assigned");
+  }
+  return (
+    <div className="NavBar">
+      <div className="NavBar_Container">
+        <div className="NavBar_Left">
+          <div className="NavBar_Logo_Container">
+            <Link
+              className="NavBar_Logo_Link"
+              styles="margin-right: 0px;"
+              to={CurrentPage_LogoRedirect}
+            >
+              <div className="NavBar_Logo">
+                <img
+                  className="NavBar_LogoImg"
+                  alt=""
+                  sizes="100vw"
+                  src={AssignedLogo}
+                />
+              </div>
+            </Link>
+            <div className="NavBar_Logo_Divider"></div>
+            <div className="NavBar_Left"></div>
+          </div>
+        </div>
+        <div className="NavBar_Center">
+          <p>{CurrentPage_Title}</p>
+        </div>
+        <div className="NavBar_Right">
+          <div className="NavBar_Right_Container">
+            {CurrentPage.pathname !== "/NoChill_Roster" && (
+              <Link
+                className="RightNav_Link"
+                to="/NoChill_Roster"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <img
+                  src={NoChill_Logo}
+                  alt=""
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    marginRight: "8px",
+                  }}
+                />
+                No Chill
+              </Link>
+            )}
+          </div>
+          {CurrentPage.pathname !== "/NoChill_Roster" && (
+            <Link className="NavBar_RightButton" to="/">
+              Log In
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}

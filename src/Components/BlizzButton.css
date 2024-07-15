@@ -1,0 +1,42 @@
+.Blizz_Button {
+  top: 200px;
+  font-family: semplicitapro, sans-serif;
+  background: none;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-image: url("src/assets/Background/Button/button_background.png");
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+
+  border-image: url("src/assets/Background/Button/button_primary.png") 30 fill /
+    30px / 1px;
+  color: #e2d29f;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px;
+  min-width: 282px;
+  min-height: 60px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.Blizz_Button:hover {
+  border-image: url("src/assets/Background/Button/button_hover.png") 30 fill /
+    30px / 1px;
+  color: #fff;
+}
+
+.Blizz_Button:disabled {
+  border-image: url("src/assets/Background/Button/button_disabled.png") 30 fill /
+    30px / 1px;
+  background-image: url("src/assets/Background/Button/button_background_disabled.png");
+  color: #fffc;
+}
+.Blizz_Button:disabled:hover {
+  border-image: url("src/assets/Background/Button/button_disabled_hover.png") 30
+    fill / 30px / 1px;
+  color: #fff;
+}

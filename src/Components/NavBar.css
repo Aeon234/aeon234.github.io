@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.NavBar {
+  opacity: 1;
+  transform: none;
+
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  margin: 0 auto;
+  max-width: calc(1200px + 8em);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border-radius: 12px;
+  height: 56px;
+  font-family: Muoto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: __muoto_7e5c91, __muoto_Fallback_7e5c91;
+}
+
+.NavBar_Container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: calc(1200px + 8em);
+  height: 56px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: rgba(26, 26, 26, 0.8);
+  border-radius: 12px;
+}
+
+.NavBar_Left {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  height: 56px;
+}
+
+.NavBar_Logo_Container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 56px;
+}
+
+.NavBar_Logo_Link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 0px;
+  margin-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-left: 4px;
+}
+
+.NavBar_Logo {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin: auto;
+}
+
+.NavBar_LogoImg {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  inset: 0px;
+  color: transparent;
+  margin: auto;
+}
+
+.NavBar_Logo_Divider {
+  width: 0;
+  height: 50%;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  margin-left: 2px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.NavBar_Right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0;
+  padding: 8px;
+  transition: opacity 0.2s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.2s cubic-bezier(0.33, 1, 0.68, 1),
+    visibility 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.NavBar_RightButton {
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  line-height: 24px;
+  background: #d8d8d8;
+  color: #212427;
+  margin-left: 16px;
+  z-index: 1;
+  /* text-shadow: 0 -3px 9px hsla(5, 100%, 72%, 0.5),
+    0 4px 7px rgba(201, 0, 0, 0.5); */
+  transition: transform 0.2s;
+}
+
+.NavBar_Right_Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+  margin-right: 0;
+  transition: margin-right 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.RightNav_Link {
+  display: flex;
+  padding: 8px 16px;
+  z-index: 1;
+  transition: color 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.NavBar_Center {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+}
