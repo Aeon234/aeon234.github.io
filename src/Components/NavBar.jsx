@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 export function NavBar() {
+  const user = false;
   const CurrentPage = useLocation();
   let AssignedLogo;
   let CurrentPage_Title;
@@ -64,9 +65,27 @@ export function NavBar() {
                 No Chill
               </Link>
             )}
+            {CurrentPage.pathname !== "/NoChill_Roster" && (
+              <Link
+                className="RightNav_Link"
+                to="/Blog_Post"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <img
+                  src={NoChill_Logo}
+                  alt=""
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    marginRight: "8px",
+                  }}
+                />
+                Blog Post
+              </Link>
+            )}
           </div>
           {CurrentPage.pathname !== "/NoChill_Roster" && (
-            <Link className="NavBar_RightButton" to="/">
+            <Link className="NavBar_RightButton" to="/Login">
               Log In
             </Link>
           )}

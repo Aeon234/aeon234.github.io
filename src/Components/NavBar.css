@@ -11,6 +11,7 @@ a {
   transform: none;
 
   position: fixed;
+  top: 2.1rem;
   left: 1rem;
   right: 1rem;
   display: flex;

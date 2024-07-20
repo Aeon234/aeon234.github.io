@@ -1,0 +1,76 @@
+.AboutMe_Section {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0px;
+  border: 0px;
+  padding: 14px;
+  box-sizing: border-box;
+  line-height: normal;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: rgba(26, 26, 26, 0.8);
+  border-radius: 12px;
+}
+
+.Timeline_Section {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+
+p,
+h4 {
+  font-size: 0.8rem;
+}
+
+.MyInfo_Section {
+  margin-left: 10px;
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Blog {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5em;
+}

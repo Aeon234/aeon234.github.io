@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+.inter-thin {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-desc {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-reg {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.Post {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: rgba(26, 26, 26, 0.8);
+  border-radius: 12px;
+
+  width: 100%;
+}
+
+.Post_Image {
+  width: 100%;
+  height: 58.8%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Post_Info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Post_Categories {
+  margin: 0 auto;
+  margin-top: -17px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: #2f7ce0;
+  border-radius: 12px;
+}
+
+.Post_Category {
+  font-size: 1rem;
+  line-height: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Post_Title {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.Post_Date {
+  font-size: 0.8rem;
+  color: #d6d6d6;
+  margin-bottom: 10px;
+}
+
+.Post_Desc {
+  margin: 0px 10px 0px 10px;
+  padding-bottom: 6px;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
