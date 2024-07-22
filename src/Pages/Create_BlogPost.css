@@ -1,0 +1,43 @@
+.Create_BlogPost {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: rgba(26, 26, 26, 0.8);
+  border-radius: 12px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  line-height: normal;
+  width: 100%;
+}
+
+.BlogPost_Image {
+  width: 100%;
+  height: 58.8%;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.Post_Wrapper {
+  padding: 20px;
+}
+
+.BlogPost_Title {
+  margin-top: -17px;
+  font-size: 2rem;
+}
+
+.BlogPost_Edit {
+  float: right;
+  font-size: 1.5rem;
+}
+
+.BlogPost_Icon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.BlogPost_Icon:first-child:hover {
+  color: #00ff12;
+}
+.BlogPost_Icon:last-child:hover {
+  color: #ff2020;
+}

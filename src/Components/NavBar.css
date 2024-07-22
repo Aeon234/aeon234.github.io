@@ -42,6 +42,10 @@ a {
   border-radius: 12px;
 }
 
+.teste {
+  font-size: 2rem;
+}
+
 .NavBar_Left {
   position: relative;
   display: flex;

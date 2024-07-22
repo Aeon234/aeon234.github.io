@@ -5,8 +5,7 @@
 }
 
 h2,
-h3,
-b {
+h3 {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */

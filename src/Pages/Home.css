@@ -12,7 +12,8 @@
   box-sizing: border-box;
   line-height: normal;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(32, 32, 32, 0.8);
+  /* background-color: rgba(26, 26, 26, 0.8); */
   border-radius: 12px;
 }
 

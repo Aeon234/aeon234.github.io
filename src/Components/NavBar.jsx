@@ -1,11 +1,17 @@
 import "./NavBar.css";
-import Aeon_Logo from "../assets/Logo.ico";
+import Aeon_Logo from "../favicon.ico";
 import NoChill_Logo from "../assets/NoChill.ico";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 export function NavBar() {
-  const user = false;
+  const token = sessionStorage.getItem("User");
+  let Login_Button_Destination;
+  if (token) {
+    Login_Button_Destination = "/";
+  } else {
+    Login_Button_Destination = "/login";
+  }
   const CurrentPage = useLocation();
   let AssignedLogo;
   let CurrentPage_Title;
@@ -43,7 +49,7 @@ export function NavBar() {
           </div>
         </div>
         <div className="NavBar_Center">
-          <p>{CurrentPage_Title}</p>
+          <p className="teste">{CurrentPage_Title}</p>
         </div>
         <div className="NavBar_Right">
           <div className="NavBar_Right_Container">
@@ -65,27 +71,9 @@ export function NavBar() {
                 No Chill
               </Link>
             )}
-            {CurrentPage.pathname !== "/NoChill_Roster" && (
-              <Link
-                className="RightNav_Link"
-                to="/Blog_Post"
-                style={{ display: "flex", alignItems: "center" }}
-              >
-                <img
-                  src={NoChill_Logo}
-                  alt=""
-                  style={{
-                    width: "20px",
-                    height: "20px",
-                    marginRight: "8px",
-                  }}
-                />
-                Blog Post
-              </Link>
-            )}
           </div>
-          {CurrentPage.pathname !== "/NoChill_Roster" && (
-            <Link className="NavBar_RightButton" to="/Login">
+          {CurrentPage.pathname !== "/NoChill_Roster" && !token && (
+            <Link className="NavBar_RightButton" to={Login_Button_Destination}>
               Log In
             </Link>
           )}

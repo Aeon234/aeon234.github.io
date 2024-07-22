@@ -1,7 +1,28 @@
+import { useEffect, useState, useRef } from "react";
 import Posts from "../Components/Posts/Posts";
 import "./Home.css";
+import { getPosts, getPost, createPost, updatePost, deletePost } from "../API";
 
 export function Home() {
+  const isMounted = useRef(false);
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    if (!isMounted.current) {
+      async function grabPosts() {
+        const data = await getPosts();
+        data.sort(
+          (d1, d2) =>
+            new Date(d2.dateCreated).getTime() -
+            new Date(d1.dateCreated).getTime()
+        );
+        if (data) {
+          setPosts(data);
+        }
+      }
+      grabPosts();
+      isMounted.current = true;
+    }
+  }, []);
   return (
     <>
       <div className="AboutMe_Section">
@@ -32,7 +53,7 @@ export function Home() {
             Computer Science
           </p>
           <h4 className="col-span-2 col-start-1 col-end-3">
-            City of Hope, Comprehensive Cancer Centeer
+            City of Hope, Comprehensive Cancer Center
             <br></br>
             2018-2024
           </h4>
@@ -42,7 +63,7 @@ export function Home() {
             Hematologic Cancer, Population Sciences and Cardiology.
           </p>
           <h4 className="col-span-2 col-start-1 col-end-3">
-            University of California, Santa Cruz
+            UC, Santa Cruz
             <br></br>
             2013-2017
           </h4>
@@ -50,7 +71,7 @@ export function Home() {
         </div>
       </div>
       <div className="Blog">
-        <Posts />
+        <Posts posts={posts} />
       </div>
     </>
   );
